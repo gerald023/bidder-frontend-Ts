@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+.profile:hover{
+    background-color: gainsboro;
+}
+.menuIcon{
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60%;
+    transition: 0.4s ease-in-out;
+}
+.title{
+    font-family: "Luckiest Guy", cursive;
+    font-weight: 400;
+    font-style: normal;  
+}
+/* .menuIcon .icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    margin: 0 auto;
+} */
+.sidebarLink{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+    text-decoration: none;
+}
+.sidebarLink::before{
+    content: "";
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none   ;
+    width: 0;
+    height: 100%;
+    background: linear-gradient(to right,rgba(36, 155, 194, 0) 0%,rgba(41, 8, 187, 0.3) 100%);
+    transform: skew(-25deg);
+    transition: ease-in-out;
+    
+}
+
+@keyframes shine {
+    100% {
+        left: 20%;
+        width: 100%;
+    }
+    
+   
+}
+.sidebarLink:hover::before{
+    animation: shine 1.2s;
+    
+    display: block;
+}
+.sidebarLink:hover{
+    background-color: rgba(220, 220, 220, 1);
+}
+.sidebarLink:hover .menuIcon{
+    border: 1px solid transparent;
+    background-color: transparent;
+}
+.sait{
+    color: #504c4c;
+}
+/* 
+.none{
+    display: none;
+}
+.display{
+    display: flex;
+} */
+.active .menuIcon{
+    background-color: transparent;
+}
+.active{
+    background-color: rgba(220, 220, 220, 1);
+    color: black;
+}

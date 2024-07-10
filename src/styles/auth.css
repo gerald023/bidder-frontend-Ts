@@ -1,0 +1,70 @@
+.slide::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    background-color: #ddc07d; /** CHANGE THIS FOR SLIDE COLOR **/
+    transition: all 0.3s ease;
+}
+
+.slide:hover:after {
+    left: 0;
+    width: 100%;
+}
+.slide:hover .icon{
+    color: white;
+}
+.roleCheck{
+    opacity: 1;
+    width: 200px;
+    background-color: red;
+    border: 2px solid yellow;
+}
+.roleCheck:checked + .icon{
+    color: white;
+}
+.slide .icon{
+    font-size: 50px;
+    z-index: 99;
+    color: black;
+    /* text-shadow: 2px 0px 2px black; */
+}
+
+.slide:checked + .icon{
+    color: white;
+    z-index: 99;
+}
+.slide:focus + .icon{
+    color: white;
+    z-index: 99;
+}
+.slide:active .icon{
+    color: white;
+}
+input[type="radio"]:checked + .icon{
+    color: white;
+    z-index: 99;
+}
+.loginAnimate{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #70727448;
+}
+
+.errorMeg{
+    background-color: #ffeced;
+    color: crimson;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+    gap: 12px;
+    padding: 3px 7px;
+    margin-bottom: -10px;
+    border-radius: 7px;
+}

@@ -1,0 +1,6 @@
+.logoutBtn:hover .logoutIcon{
+    color: #fa5f5f;
+}
+.logoutIcon{
+    transition: 0.5s ease-in-out;
+}

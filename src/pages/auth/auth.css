@@ -1,0 +1,35 @@
+.authSideBar{
+    position: relative;
+    width: 550px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    margin-left: -5%;
+    transform: skew(-5deg, 0deg);
+    background: black;
+}
+.authSideBar::after{
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 100%;
+    color: #cab074;
+    /* background-color: black; */
+    
+}
+.authNavContent{
+    display: flex;
+    flex-direction: column;
+    padding: 30px 16px;
+    width: 80%;
+    position: absolute;
+    z-index: 5;
+    width: 100%;
+    align-items: center;
+}
+
+.authNavContent .authTitle{
+    font-size: 30px;
+    font-weight: 600;
+    color: white;
+}
